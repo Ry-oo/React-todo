@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "../../styles/Home.module.css";
+import styles from "../src/styles/Home.module.css";
 import { FC, Dispatch, SetStateAction } from "react";
-import { TaskType } from "..";
+import { TaskType } from "../src/pages/index";
 
 type stateType = {
   taskList: TaskType[];

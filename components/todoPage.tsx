@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "../../styles/Home.module.css";
+import styles from "../src/styles/Home.module.css";
 import { FC, useState, Dispatch, SetStateAction } from "react";
-import { TaskType } from "..";
+import { TaskType } from "../src/pages/index";
 
 type submitType = React.FormEvent<HTMLFormElement>;
 type changeType = React.ChangeEvent<HTMLInputElement>;
@@ -27,7 +27,6 @@ export const MainPage: FC<stateType> = ({ taskList, setTaskList }) => {
       },
     ]);
     setInputText("");
-    console.log(taskList);
   };
 
   const handleChange = (e: changeType) => {
